@@ -13,6 +13,9 @@ function multiply(param1, param2) {
     for (let i = 1; i <= param2; i++) {
         mult += add(param1, 0)
     }
+    if (param1 === 0 || param2 === 0) {
+        mult = 0
+    }
     return mult
 }
 
@@ -25,6 +28,9 @@ function power(par1, par2) {
     let variante = par1
     for (i = 1; i < par2; i++) {
         variante = multiply(variante, par1)
+    }
+    if (par2 === 0 && par1 !== 0) {
+        variante = 1
     }
     return variante
 }
