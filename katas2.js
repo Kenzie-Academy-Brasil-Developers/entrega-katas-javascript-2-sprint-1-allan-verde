@@ -9,14 +9,14 @@ console.assert(add(3, 5) === 8, 'A função add não está funcionando como espe
 
 // comece a criar a sua função multiply na linha abaixo
 function multiply(param1, param2) {
-    let mult = 0
+    let resultado = 0
     for (let i = 1; i <= param2; i++) {
-        mult += add(param1, 0)
+        resultado += add(param1, 0)
     }
     if (param1 === 0 || param2 === 0) {
-        mult = 0
+        resultado = 0
     }
-    return mult
+    return resultado
 }
 
 // descomente a linha seguinte para testar sua função
@@ -25,14 +25,14 @@ console.assert(multiply(4, 6) === 24, 'A função multiply não está funcionand
 
 // comece a criar a sua função power na linha abaixo
 function power(par1, par2) {
-    let variante = par1
+    let resultadoVariante = par1
     for (i = 1; i < par2; i++) {
-        variante = multiply(variante, par1)
+        resultadoVariante = multiply(resultadoVariante, par1)
     }
     if (par2 === 0 && par1 !== 0) {
-        variante = 1
+        resultadoVariante = 1
     }
-    return variante
+    return resultadoVariante
 }
 
 // descomente a linha seguinte para testar sua função
@@ -42,10 +42,10 @@ console.assert(power(3, 4) === 81, 'A função power não está funcionando como
 // comece a criar a sua função factorial na linha abaixo
 function factorial(fator) {
     let variavel = fator
-    let y = 1
+    let redutor = 1
     for (i = fator; i > 1; i--) {
-        variavel = multiply(variavel, (fator - y))
-        y++
+        variavel = multiply(variavel, (fator - redutor))
+        redutor++
     }
     return variavel
 }
