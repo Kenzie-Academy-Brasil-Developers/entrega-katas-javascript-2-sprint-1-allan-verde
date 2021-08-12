@@ -1,22 +1,36 @@
 // comece a criar a sua função add na linha abaixo
-
+function add(num1, num2) {
+    return num1 + num2
+}
 
 // descomente a linha seguinte para testar sua função
-// console.assert(add(3, 5) === 8, 'A função add não está funcionando como esperado');
+console.assert(add(3, 5) === 8, 'A função add não está funcionando como esperado');
 
 
 // comece a criar a sua função multiply na linha abaixo
-
+function multiply(param1, param2) {
+    let mult = 0
+    for (let i = 1; i <= param2; i++) {
+        mult += add(param1, 0)
+    }
+    return mult
+}
 
 // descomente a linha seguinte para testar sua função
-// console.assert(multiply(4, 6) === 24, 'A função multiply não está funcionando como esperado');
+console.assert(multiply(4, 6) === 24, 'A função multiply não está funcionando como esperado');
 
 
 // comece a criar a sua função power na linha abaixo
-
+function power(par1, par2) {
+    let variante = par1
+    for (i = 1; i < par2; i++) {
+        variante = multiply(variante, par1)
+    }
+    return variante
+}
 
 // descomente a linha seguinte para testar sua função
-// console.assert(power(3, 4) === 81, 'A função power não está funcionando como esperado');
+console.assert(power(3, 4) === 81, 'A função power não está funcionando como esperado');
 
 
 // comece a criar a sua função factorial na linha abaixo
