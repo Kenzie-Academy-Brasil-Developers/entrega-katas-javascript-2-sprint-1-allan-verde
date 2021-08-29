@@ -66,8 +66,10 @@ function fibonacci(indice) {
         for (i = 1; i < indice; i++) {
             myArray.push( myArray[myArray.length - 1] + myArray[myArray.length - 2] )
         }
+    
+        return myArray[myArray.length-1]
     }
-    return myArray[myArray.length-1]
+    return myArray[indice]
 }
 
 
